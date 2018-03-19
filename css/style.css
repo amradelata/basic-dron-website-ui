@@ -1,0 +1,246 @@
+/* 
+    Colors: 
+    Red: ff343d
+    Gray: eff2f6
+    Dark gray: 232323
+    text gray color: 92a1a5
+*/
+
+*{
+    box-sizing: border-box
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden
+}
+
+/* Container */
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Nav */
+nav{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+}
+
+.nav-left{
+    float: left;
+    display: flex;
+}
+.logo{
+    float: left;
+    font-weight: 900;
+    margin-right: 30px;
+    position: relative;
+    user-select: none;
+}
+.logo span{
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border: 2px solid rgba(255, 52, 61, 0.89);
+    left: 100%;
+    bottom: 100%;
+    border-radius: 50%;
+    transform: translate(-30%, 50%)
+}
+.nav-left .tele{
+    float: right;
+    font-size: 10px;
+    color: #92a1a5;
+    margin: auto;
+}
+.nav-left .tele img{
+    width: 10px;
+}
+.nav-right{
+    float: right;
+    display: flex;
+}
+.nav-right a{
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    margin: auto;
+    margin-right: 15px;
+}
+.nav-right button{
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    outline: 0;
+    cursor: pointer;
+}
+.nav-right img{
+    width: 25px;
+}
+
+
+/* Side menu */
+.side-menu{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    background-color: #232323;
+    z-index: 11;
+    transition: .2s ease-in-out
+}
+.side-menu .close-btn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.side-menu .close-btn img{
+    width: 20px;
+}
+.side-bar-logo{
+    text-align: center;
+    display: flex;
+    padding: 15px 0;
+}
+.side-menu .logo{
+    color: #fff;
+    margin: auto;
+    font-size: 3em;
+}
+.side-menu .logo span{
+    width: 10px;
+    height: 10px;
+}
+.side-menu ul{
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 15px
+}
+.side-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 100px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255, 255, .5);
+    transition: .15s;
+}
+.side-menu ul li a:hover{
+    background-color: rgba(255,255, 255, .2);
+}
+
+/* Hero */
+#hero{
+    height: 100vh;
+    background-color: #eff2f6;
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+.left h1{
+    font-size: 60px;
+    margin-bottom: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.left p{
+    color: #92a1a5;
+    font-size: 14px;
+}
+
+.scroll-down{
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    transform: rotate(-90deg);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: #ff343d;
+    user-select: none;
+}
+.right .big-text{
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+    color: #ff343d;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg);
+    font-size: 20em;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 0px 0px 55px rgba(0, 1, 1, 0.15);
+}
+
+
+.right .white-circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(50%, -50%)
+}
+
+.right .white-circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.6);
+    width: 100%
+}
+
+
+
+/* Fly */
+#fly{
+    
+}
