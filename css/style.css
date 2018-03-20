@@ -200,14 +200,14 @@ nav{
     top: 0;
     bottom: 0;
     width: 40%;
-    background-color: #ff343d;
+    background-color: #3498db;
     user-select: none;
 }
 .right .big-text{
     position: absolute;
     right: 10px;
     text-transform: uppercase;
-    color: #ff343d;
+    color: #3498db;
     top: 0;
     bottom: 0;
     right: 0;
