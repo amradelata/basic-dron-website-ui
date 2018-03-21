@@ -14,7 +14,25 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden
+    overflow-x: hidden;
+    height: 4000px;
+}
+h1{
+    font-weight: 800;
+    font-style: normal;
+}
+p{
+    color: #92a1a5;
+    font-size: 14px;
+}
+.sexy-button{
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600
 }
 
 /* Container */
@@ -164,6 +182,7 @@ nav{
     height: 100vh;
     background-color: #eff2f6;
     position: relative;
+    overflow: hidden;
 }
 
 .left{
@@ -178,10 +197,6 @@ nav{
     margin-bottom: 0;
     font-weight: 800;
     text-transform: uppercase;
-}
-.left p{
-    color: #92a1a5;
-    font-size: 14px;
 }
 
 .scroll-down{
@@ -242,5 +257,93 @@ nav{
 
 /* Fly */
 #fly{
-    
+    display: flex;
+}
+#fly .tab-to-fly{
+    width: 35%;
+    display: inline-block;
+    background-color: #f7f8fa;
+    background-image: url('../img/wallpapers/Circle.png');
+    background-position: 150% 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+}
+#fly .tab-to-fly .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+#fly .tab-to-fly .content h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 0
+}
+#fly .tab-to-fly > img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%
+}
+#fly .fly-higher{
+    width: 65%;
+    margin: auto;
+    display: inline-block;
+    background-image: url('../img/wallpapers/road.png');
+    backgroun-size: cover;
+}
+
+
+#fly .fly-higher{
+    height: 400px;
+    position: relative;
+}
+
+#fly .fly-higher .dark-layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex
+}
+#fly .fly-higher .dark-layer h1{
+    margin: auto;
+    color: #fff;
+    font-size: 35px
+}
+#fly .sexy-button{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+
+}
+
+
+
+
+
+
+/* Features */
+#features {
+    padding: 50px 0;
+}
+#features h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 60px
+}
+
+#features .sexy-features{
+    display: flex;
+}
+#features .single-feature{
+    margin: auto;
+    width: 25%;
+    text-align: center
 }
