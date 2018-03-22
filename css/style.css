@@ -398,5 +398,39 @@ nav{
     position: absolute;
     left: 11%;
     bottom: 10%;
-/*    transform: translateX(-50%);*/
+}
+ /*flying*/
+.New2
+{
+    position: absolute;
+    width: 50%;
+    height: 600px;
+}
+.New2 h2
+{
+    margin-left: 100px; 
+    margin-top: 150px;  
+    color: #000;
+    font-size: 80px;
+}
+.New2 span
+{
+    color:#ff343d;
+    z-index:999;
+}
+.New2 button
+{
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    background: #ffffff;
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-left: 100px; 
+}
+.flying img
+{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    margin-top: 100px;
 }
