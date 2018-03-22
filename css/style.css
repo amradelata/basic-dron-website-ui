@@ -8,6 +8,7 @@
 
 *{
     box-sizing: border-box
+
 }
 
 body{
@@ -25,7 +26,7 @@ p{
     color: #92a1a5;
     font-size: 14px;
 }
-.sexy-button{
+.button{
     background-color: #fff;
     color: #333;
     padding: 10px 20px;
@@ -293,7 +294,7 @@ nav{
     margin: auto;
     display: inline-block;
     background-image: url('../img/wallpapers/road.png');
-    backgroun-size: cover;
+    background-size: cover;
 }
 
 
@@ -316,18 +317,13 @@ nav{
     color: #fff;
     font-size: 35px
 }
-#fly .sexy-button{
+#fly .button{
     position: absolute;
     right: 40px;
     top: 50%;
     transform: translateY(-50%) rotate(-90deg);
 
 }
-
-
-
-
-
 
 /* Features */
 #features {
@@ -339,11 +335,68 @@ nav{
     margin-bottom: 60px
 }
 
-#features .sexy-features{
+#features .features{
     display: flex;
 }
 #features .single-feature{
     margin: auto;
     width: 25%;
     text-align: center
+}
+
+/*generation*/
+#generation
+{
+    display: flex;
+}
+#generation .control-img
+{
+    width: 50%;
+    /*margin:auto;*/
+    height: 634px;
+    display: inline-block;
+    background-image:url('../img/wallpapers/controller.png');
+    background-size:cover;  
+}
+#generation .New-generation
+{
+     width: 50%;
+     /*margin:auto;*/
+    height: 634px;     
+    display: inline-block;   
+    background: #232323;
+    position: relative;
+}
+#generation .New-generation img
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+}
+#generation .New-generation h1
+{
+    color: #fff;
+    font-size: 70px;
+    font-weight: normal;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50% ,-50%);
+
+}
+#generation .New-generation span
+{
+    color: #ff343d;
+}
+#generation .New-generation button
+{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    position: absolute;
+    left: 11%;
+    bottom: 10%;
+/*    transform: translateX(-50%);*/
 }
