@@ -254,8 +254,6 @@ nav{
     width: 100%
 }
 
-
-
 /* Fly */
 #fly{
     display: flex;
@@ -352,7 +350,6 @@ nav{
 #generation .control-img
 {
     width: 50%;
-    /*margin:auto;*/
     height: 634px;
     display: inline-block;
     background-image:url('../img/wallpapers/controller.png');
@@ -361,7 +358,6 @@ nav{
 #generation .New-generation
 {
      width: 50%;
-     /*margin:auto;*/
     height: 634px;     
     display: inline-block;   
     background: #232323;
@@ -400,9 +396,13 @@ nav{
     bottom: 10%;
 }
  /*flying*/
+ .flying
+ {
+     display: flex;   
+ }
 .New2
 {
-    position: absolute;
+    /*position: absolute;*/
     width: 50%;
     height: 600px;
 }
@@ -422,15 +422,45 @@ nav{
 {
     border: 1px solid #ccc;
     padding: 15px 30px;
-    background: #ffffff;
+    background: #fff;
     border-radius: 25px;
     margin-top: 200px;
     margin-left: 100px; 
+    display: block;
 }
 .flying img
 {
     width: 50%;
     position: absolute;
-    right: 0;
+    right: -100px;
     margin-top: 100px;
+}
+
+
+/*journey*/
+
+.journey
+{
+    height: 100vh;
+    background:url('../img/wallpapers/sea.png'); 
+    margin-top: 100px;
+    background-size:cover; 
+    padding: 20px 0;
+}
+.journey h1
+{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 550px;
+}
+.journey button
+{
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    background: #ffffff;
+    border-radius: 25px;
+    margin-top: 70px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
 }
