@@ -507,7 +507,16 @@ nav{
 {
   .nav-right
   {
-    display: none;
+    /* display: none; */
+    background: #000;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    
+  }
+  .nav-left .tele{
+      right: 15px;
+      position: absolute;
   }
   .logo
   {
@@ -563,7 +572,7 @@ nav{
 }
 #fly .fly-higher 
 {
-    width: 120%;
+    width: 100%;
 }
 #features .features
 {
@@ -595,7 +604,6 @@ nav{
 }
 #generation .New-generation button
 {
-      left: 30%;  
       bottom:15%;
 }
 .flying
@@ -612,14 +620,21 @@ nav{
 }
 .New2
 {
-   width: 100%; 
-       height: 240px;
+    width: 100%; 
+    height: 240px;
 }
 .New2 h2
 {
     font-size: 50px; 
     margin-left: 10px; 
-        margin-top: 200px;  
+    margin: 100px 20px;  
+}
+.flying img{
+display: none;
+
+}
+.flying{
+    padding-bottom: 100px;
 }
 .contact
 {
@@ -634,5 +649,19 @@ nav{
 .copyright .logo2 span
 {
   left: 78%;  
+}
+#features .single-feature{
+    width: 100%;
+    margin: 100px 0
+}
+.New2 button{
+    margin: 0 20px;
+    
+}
+#fly .fly-higher .dark-layer h1{
+    margin-left: 20px;
+}
+.nav-right button {
+margin: 1px;
 }
 }
