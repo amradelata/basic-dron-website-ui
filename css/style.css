@@ -35,12 +35,48 @@ p{
     font-size: 14px;
     font-weight: 600
 }
+ /* popup*/
+    .mypopup {
+  display: none;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.mypopup img {
+  width: 350px;
+}
+.mypopup button {
+  /* display: block; */
+  margin: 20px auto;
+  border: none;
+  padding: 10px;
+  background: #2f3640;
+  color: aliceblue;
+}
+.mypopup button a {
+  color: aliceblue;
+}
+    /* popup*/
 
 /* Container */
-@media (min-width: 768px){
-    .container {
-        width: 750px;
-    }
+@media (max-width: 768px){
+   /* popup*/
+  .mypopup img{
+    width: 200px;
+  }
+    .mypopup {
+    width: 100%;
+  }
+  .mypopup button {
+    font-size: 15px !important;
+  }
+  /* popup*/
 }
 
 @media (min-width: 992px){
@@ -259,12 +295,12 @@ nav{
     display: flex;
 }
 #fly .tab-to-fly{
-    width: 35%;
+    width: 50%;
     display: inline-block;
     background-color: #f7f8fa;
     background-image: url('../img/wallpapers/Circle.png');
     background-position: 150% 50%;
-    background-size: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     height: 400px;
@@ -503,7 +539,7 @@ nav{
 
 
 /*Media Query*/
-@media(max-width: 768px)
+@media(max-width: 1230px) 
 {
   .nav-right
   {
