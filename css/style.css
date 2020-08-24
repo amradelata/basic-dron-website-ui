@@ -66,6 +66,10 @@ p{
 
 /* Container */
 @media (max-width: 768px){
+    .right .white-circle img{
+    top: 65% !important;
+    }
+
    /* popup*/
   .mypopup img{
     width: 200px;
